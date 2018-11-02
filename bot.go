@@ -1,4 +1,4 @@
-package TTbot
+package main
 
 import (
 	"encoding/xml"
@@ -9,8 +9,8 @@ import (
 )
 
 const (
-	BotToken   = "704638263:AAGQTI8U1HpQQXK5lUoA4nhs31c1mclw4OQ"
-	WebhookURL = "https://ea731f5c.ngrok.io"
+	BotToken   = "704638263:AAHVV80QY2owKbfm16wM91RBNH25-j2fyjQ"
+	WebhookURL = "https://1bf78918.ngrok.io"
 )
 
 var rss = map[string]string{
@@ -50,7 +50,7 @@ func main() {
 		panic(err)
 	}
 
-	// bot.Debug = true
+	 //bot.Debug = true
 	fmt.Printf("Authorized on account %s\n", bot.Self.UserName)
 
 	_, err = bot.SetWebhook(tgbotapi.NewWebhook(WebhookURL))
